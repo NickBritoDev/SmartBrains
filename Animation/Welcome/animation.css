@@ -1,0 +1,44 @@
+.containerH1 h1 {
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0);
+    background: linear-gradient(to right, rgb(248, 248, 248), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    transform: scale(1);
+    background: linear-gradient(to right, rgb(204, 204, 204), rgb(39, 39, 39));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.containerText p {
+  animation: scale-up-center2 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-center2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.containerButton {
+  animation: scale-up-center3 1s cubic-bezier(0.39, 0.575, 0.565, 1) alternate;
+}
+
+@keyframes scale-up-center3 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
